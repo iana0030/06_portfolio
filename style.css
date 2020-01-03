@@ -1,0 +1,25 @@
+* {
+    box-sizing: border-box;
+    /* outline: auto; */
+}
+
+img {
+    width: 100%;
+}
+
+body {
+    margin: 0;
+    background-color: #D9D2C5;
+}
+
+section {
+    padding: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
