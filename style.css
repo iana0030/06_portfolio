@@ -24,18 +24,20 @@ section {
     justify-content: center;
 }
 
+/********** MENU ********/
+
 header {
     position: fixed;
     z-index: 1;
     top: 1vw;
 }
 
-header nav {
+#topnav .menu {
     display: flex;
     flex-wrap: nowrap;
 }
 
-header a {
+#topnav a {
     background-color: #f9db6d;
     width: 160px;
     height: 42px;
@@ -51,10 +53,49 @@ header a {
     cursor: pointer;
 }
 
-a:hover {
+#topnav a:hover {
     background-color: #302c4f;
     color: #f9db6d;
 }
+
+#menuknap {
+    color: #f2a05e;
+    width: 50px;
+    height: 50px;
+    z-index: 2;
+    cursor: pointer;
+    font-size: 40px;
+    line-height: normal;
+}
+
+#burger ul {
+    margin-top: 0;
+    padding-left: 6vw;
+}
+
+#burger li {
+    list-style-type: none;
+    text-align: left;
+    margin: 1.5vw 0;
+    background: linear-gradient(to right, #EE6615 10%, #ECB66C 21%);
+    width: 211px;
+    height: 42px;
+    padding: 8px;
+    padding-left: 40px;
+    border-radius: 3px;
+}
+
+#burger a {
+    padding: 5px;
+    color: #3f2847;
+    text-decoration: none;
+    font-family: 'Turret Road', cursive;
+    font-weight: bolder;
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+
+/************** FORSIDE ***************/
 
 #forside {
     width: 100vw;
@@ -127,7 +168,31 @@ a:hover {
 
 }
 
+.hidden {
+    display: none;
+}
+
 /********** MEDIA QUERIES ************/
+
+@media only screen and (min-width: 800px) {
+    header {
+        position: fixed;
+        z-index: 1;
+        top: 1vw;
+        left: 8vw;
+    }
+
+    #menuknap,
+    #burger {
+        display: none;
+    }
+
+    #topnav {
+        display: block;
+    }
+
+
+}
 
 @media only screen and (min-width: 1000px) {
     header {
@@ -137,7 +202,7 @@ a:hover {
         left: 6vw;
     }
 
-    header a {
+    header #topnav a {
         margin: 10px 55px;
     }
 
@@ -162,6 +227,16 @@ a:hover {
         z-index: 1;
         top: 4vw;
         left: 12vw;
+    }
+
+}
+
+@media only screen and (min-width: 1400px) {
+    header {
+        position: fixed;
+        z-index: 1;
+        top: 3vw;
+        left: 19vw;
     }
 
 }
