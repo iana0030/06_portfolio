@@ -1,3 +1,5 @@
+/************ GENERELT ***************/
+
 * {
     box-sizing: border-box;
     /* outline: auto; */
@@ -9,12 +11,10 @@ img {
 
 body {
     margin: 0;
-    background-color: #D9D2C5;
+    background-color: rgba(63, 40, 71, 1);
 }
 
 section {
-    padding: 1rem;
-    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -22,4 +22,155 @@ section {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+}
+
+header {
+    position: fixed;
+    z-index: 1;
+    top: 1vw;
+}
+
+header nav {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+header a {
+    background-color: #f9db6d;
+    width: 160px;
+    height: 42px;
+    padding: 8px;
+    margin: 10px 35px;
+    border-radius: 3px;
+    text-align: center;
+    color: rgba(63, 40, 71, 1);
+    text-decoration: none;
+    font-family: 'Turret Road', cursive;
+    font-weight: bolder;
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+
+a:hover {
+    background-color: #302c4f;
+    color: #f9db6d;
+}
+
+#forside {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+#splash_bg {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-image: url(splash/stars.png);
+    background-size: cover;
+    background-position: 50% 20%;
+}
+
+#splash_mg {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-image: url(splash/clouds.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 37% 20%;
+}
+
+#splash_fg {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-image: url(splash/landscape.png);
+    background-size: cover;
+    background-position: 34% 20%;
+}
+
+.border {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-image: url(splash/border.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50% 20%;
+    display: none;
+    overflow: hidden;
+}
+
+/********* ANIMATIONS ****************/
+
+.float {
+    animation-name: float_kf;
+    animation-duration: 60s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes float_kf {
+    0% {
+        transform: translateX(10vw);
+    }
+
+    50% {
+        transform: translateX(-10vw);
+    }
+
+    100% {
+        transform: translateX(10vw);
+    }
+
+}
+
+/********** MEDIA QUERIES ************/
+
+@media only screen and (min-width: 1000px) {
+    header {
+        position: fixed;
+        z-index: 1;
+        top: 3vw;
+        left: 6vw;
+    }
+
+    header a {
+        margin: 10px 55px;
+    }
+
+    .border {
+        display: block;
+    }
+
+}
+
+@media only screen and (max-width: 1000px) {
+    #splash_mg {
+        position: absolute;
+        width: 160%;
+        background-position: 128% 51%;
+    }
+
+}
+
+@media only screen and (min-width: 1200px) {
+    header {
+        position: fixed;
+        z-index: 1;
+        top: 4vw;
+        left: 12vw;
+    }
+
+}
+
+@media only screen and (min-width: 1500px) {
+    header {
+        position: fixed;
+        z-index: 1;
+        top: 1vw;
+        left: 25vw;
+    }
 }
