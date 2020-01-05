@@ -43,7 +43,8 @@ h1 {
     color: #f2a05e;
     font-family: 'Timmana', sans-serif;
     font-size: 2.5rem;
-    margin: 0;
+    margin: 2rem 0;
+    line-height: 100%;
 }
 
 p,
@@ -268,6 +269,13 @@ ul {
 }
 
 /********* TEMAER *************/
+
+#tema_2,
+#tema_3,
+#tema_4,
+#tema_5 {
+    background-image: url(elements/stars_bg.png)
+}
 
 #tema_2 .col,
 #tema_3 .col,
