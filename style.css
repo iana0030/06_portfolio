@@ -310,13 +310,33 @@ ul {
 
 .bottom {
     display: flex;
+    padding: 0 12rem 1rem 12rem;
+}
 
+.bottom .txt {
+    margin-top: 0 !important;
+}
+
+.bottom h1 {
+    margin-bottom: 0;
+}
+
+.bottom .img_box_2 {
+    padding: 5rem;
 }
 
 #tema_2 .img_box,
 #tema_3 .img_box,
 #tema_4 .img_box,
 #tema_5 .img_box {
+    flex-grow: 1;
+    margin: 1vw;
+}
+
+#tema_2 .img_box_2,
+#tema_3 .img_box_2,
+#tema_4 .img_box_2,
+#tema_5 .img_box_2 {
     flex-grow: 1;
     margin: 1vw;
 }
