@@ -183,6 +183,12 @@ header {
     overflow: hidden;
 }
 
+#title {
+    position: absolute;
+    padding: 2rem 0rem 3rem 3rem;
+    width: 280px;
+}
+
 /********* PORTFOLIO *************/
 
 #portfolio {
@@ -347,6 +353,11 @@ ul {
         flex-basis: 262px;
     }
 
+    #title {
+        padding: 6rem 0rem 0rem 2rem;
+        width: 300px;
+    }
+
 }
 
 @media only screen and (min-width: 857px) {
@@ -418,6 +429,10 @@ ul {
         font-size: 0.70rem;
     }
 
+    #title {
+        padding: 6rem 0rem 0rem 7rem;
+    }
+
 }
 
 @media only screen and (max-width: 1000px) {
@@ -479,6 +494,10 @@ ul {
         font-size: 0.95rem;
     }
 
+    #title {
+        padding: 6rem 0rem 0rem 5rem;
+    }
+
 }
 
 @media only screen and (min-width: 1400px) {
@@ -489,6 +508,11 @@ ul {
         left: 22vw;
     }
 
+    #title {
+        padding: 5rem 0rem 0rem 7rem;
+        width: 367px;
+    }
+
 }
 
 @media only screen and (min-width: 1500px) {
@@ -497,5 +521,10 @@ ul {
         z-index: 1;
         top: 1vw;
         left: 27vw;
+    }
+
+    #title {
+        padding: 5rem 0rem 0rem 20rem;
+        width: 627px;
     }
 }
