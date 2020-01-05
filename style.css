@@ -35,7 +35,8 @@ section {
 
 .frame {
     border: solid 5px #f9db6d;
-    margin: 4vw;
+    margin: 3vw;
+    padding: 0 1rem 3rem 1rem;
     border-radius: 22px;
 }
 
@@ -63,11 +64,14 @@ header {
     position: fixed;
     z-index: 1;
     top: 1vw;
+    width: 100%;
 }
 
 #topnav .menu {
     display: flex;
     flex-wrap: nowrap;
+    justify-content: space-between;
+    padding: 0 8rem;
 }
 
 #topnav a {
@@ -84,6 +88,7 @@ header {
     font-weight: bolder;
     font-size: 1.4rem;
     cursor: pointer;
+    flex-grow: 1;
 }
 
 #topnav a:hover {
@@ -100,6 +105,8 @@ header {
 
 #menuknap_div {
     background-color: rgba(63, 40, 71, 1);
+    width: 50px;
+    height: 60px;
 }
 
 #menuknap {
@@ -206,11 +213,16 @@ header {
     width: 280px;
 }
 
+#forside .frame {
+    height: 97%;
+    position: inherit;
+}
+
 /********* PORTFOLIO *************/
 
 #portfolio {
     max-width: 1300px;
-    padding: 9vw 4vw 0 4vw;
+    padding: 2.5vw 4vw 0 4vw;
     margin: 0 auto;
     background-image: url(elements/stars_bg.png);
 }
@@ -433,14 +445,9 @@ ul {
 }
 
 @media only screen and (min-width: 800px) {
-    header {
-        position: fixed;
-        z-index: 1;
-        top: 1vw;
-        left: 14vw;
-    }
 
     #menuknap,
+    #menuknap_div,
     #burger {
         display: none;
     }
@@ -489,15 +496,14 @@ ul {
 }
 
 @media only screen and (min-width: 1000px) {
-    header {
+    /*   header {
         position: fixed;
         z-index: 1;
         top: 3vw;
-        left: 6vw;
-    }
+    }*/
 
     header #topnav a {
-        margin: 10px 55px;
+        padding: 10px 40px;
     }
 
     .border {
@@ -512,9 +518,14 @@ ul {
     }
 
     .frame {
-        border: none;
+        /* border: none;
         margin: 0;
-        /* display: none;*/
+         display: none;*/
+    }
+
+    #forside .frame {
+        height: 91%;
+        position: inherit;
     }
 
     #om_mig .col {
@@ -610,17 +621,16 @@ ul {
 }
 
 @media only screen and (min-width: 1200px) {
-    header {
+    /*    header {
         position: fixed;
         z-index: 1;
         top: 2vw;
-        left: 12vw;
-    }
+    }*/
 
     #om_mig .col {
         display: flex;
         flex-wrap: wrap;
-        margin: 10rem 0 0 0;
+        margin: 7rem 0 0 0;
 
         background-color: #302c4f;
         border-radius: 22px;
@@ -657,27 +667,29 @@ ul {
 }
 
 @media only screen and (min-width: 1400px) {
-    header {
+    /*   header {
         position: fixed;
         z-index: 1;
         top: 1vw;
-        left: 22vw;
-    }
+    }*/
 
     #title {
         padding: 5rem 0rem 0rem 7rem;
         width: 367px;
     }
 
+    #topnav .menu {
+        padding: 0 20rem;
+    }
+
 }
 
 @media only screen and (min-width: 1500px) {
-    header {
+    /*    header {
         position: fixed;
         z-index: 1;
         top: 1vw;
-        left: 27vw;
-    }
+    }*/
 
     #title {
         padding: 5rem 0rem 0rem 20rem;
