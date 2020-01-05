@@ -262,8 +262,11 @@ ul {
 
 /********* TEMA 1 *************/
 
-#tema_2 .col {
-    margin: 5rem 1rem 5rem 1rem;
+#tema_2 .col,
+#tema_3 .col,
+#tema_4 .col,
+#tema_5 .col {
+    margin: 5rem 1rem 0rem 1rem;
     padding: 1rem;
 
     background-color: #302c4f;
@@ -282,12 +285,18 @@ ul {
 
 }
 
-#tema_2 .img_box {
+#tema_2 .img_box,
+#tema_3 .img_box,
+#tema_4 .img_box,
+#tema_5 .img_box {
     flex-grow: 1;
     margin: 1vw;
 }
 
-#tema_2 .txt {
+#tema_2 .txt,
+#tema_3 .txt,
+#tema_4 .txt,
+#tema_5 .txt {
     flex-grow: 1;
     margin-top: 3vw;
 }
@@ -438,11 +447,17 @@ ul {
         flex-direction: row;
     }
 
-    #tema_2 .img_box {
+    #tema_2 .img_box,
+    #tema_3 .img_box,
+    #tema_4 .img_box,
+    #tema_5 .img_box {
         padding: 2rem 2rem 0 2rem;
     }
 
-    #tema_2 .txt {
+    #tema_2 .txt,
+    #tema_3 .txt,
+    #tema_4 .txt,
+    #tema_5 .txt {
         padding: 0 4rem 1rem 4rem;
     }
 
@@ -521,7 +536,10 @@ ul {
         padding: 6rem 0rem 0rem 7rem;
     }
 
-    #tema_2 .col {
+    #tema_2 .col,
+    #tema_3 .col,
+    #tema_4 .col,
+    #tema_5 .col {
         margin-top: 6rem;
     }
 
@@ -529,18 +547,27 @@ ul {
         flex-direction: row;
     }
 
-    #tema_2 .img_box {
+    #tema_2 .img_box,
+    #tema_3 .img_box,
+    #tema_4 .img_box,
+    #tema_5 .img_box {
         flex-basis: 500px;
         margin: 1vw;
     }
 
-    #tema_2 .txt {
+    #tema_2 .txt,
+    #tema_3 .txt,
+    #tema_4 .txt,
+    #tema_5 .txt {
         flex-basis: 500px;
         margin-top: 3vw;
         padding: 0 3rem 1rem 1rem;
     }
 
-    #tema_2 p {
+    #tema_2 p,
+    #tema_3 p,
+    #tema_4 p,
+    #tema_5 p {
         font-size: 0.95rem;
     }
 
