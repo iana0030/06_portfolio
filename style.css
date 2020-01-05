@@ -9,6 +9,13 @@ img {
     width: 100%;
 }
 
+video {
+    width: 100%;
+    height: auto;
+    border: solid 2px #f9db6d;
+    border-radius: 10px;
+}
+
 body {
     margin: 0;
     background-color: rgba(63, 40, 71, 1);
@@ -260,7 +267,7 @@ ul {
     padding-left: 5rem;
 }
 
-/********* TEMA 1 *************/
+/********* TEMAER *************/
 
 #tema_2 .col,
 #tema_3 .col,
@@ -330,6 +337,9 @@ ul {
     transition: 0.4s;
 }
 
+.video_box {
+    align-self: center;
+}
 
 
 /********* ANIMATIONS ****************/
