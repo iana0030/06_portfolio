@@ -310,7 +310,7 @@ ul {
 
 .bottom {
     display: flex;
-    padding: 0 12rem 1rem 12rem;
+    padding: 0 0rem 1rem 0rem;
 }
 
 .bottom .txt {
@@ -347,6 +347,7 @@ ul {
 #tema_5 .txt {
     flex-grow: 1;
     margin-top: 3vw;
+    padding: 0 3rem;
 }
 
 
@@ -621,6 +622,9 @@ ul {
         font-size: 0.95rem;
     }
 
+    .bottom {
+        padding: 0 5rem 1rem 5rem;
+    }
 }
 
 @media only screen and (max-width: 1000px) {
@@ -701,6 +705,10 @@ ul {
 
     #topnav .menu {
         padding: 0 20rem;
+    }
+
+    .bottom {
+        padding: 0 12rem 1rem 12rem;
     }
 
 }
