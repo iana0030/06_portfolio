@@ -16,6 +16,7 @@ body {
 
 section {
     margin: 0 auto;
+    max-width: 1300px;
 }
 
 .sectionwrapper {
@@ -80,6 +81,13 @@ header {
 #topnav a:hover {
     background-color: #302c4f;
     color: #f9db6d;
+    border: solid 1px #f2a05e;
+}
+
+.active_site {
+    background-color: #302c4f !important;
+    color: #f9db6d !important;
+    border: solid 1px #f2a05e;
 }
 
 #menuknap_div {
@@ -141,6 +149,7 @@ header {
     height: 100vh;
     position: relative;
     overflow: hidden;
+    max-width: none;
 }
 
 #splash_bg {
@@ -222,7 +231,7 @@ header {
     background-size: cover;
 }
 
-.col {
+#om_mig .col {
     display: flex;
     flex-wrap: wrap;
     margin: 5rem 1rem 5rem 1rem;
@@ -230,16 +239,17 @@ header {
     background-color: #302c4f;
     border-radius: 22px;
     box-shadow: 10px 10px rgba(33, 30, 54, 0.76);
+    border: solid 1px #f2a05e;
 }
 
-.img_box {
+#om_mig .col .img_box {
     flex-grow: 1;
     flex-basis: 600px;
     margin: 2rem 2rem 0 2rem;
     padding: 0;
 }
 
-.txt {
+#om_mig .col .txt {
     flex-grow: 1;
     flex-basis: 600px;
     margin: 1rem;
@@ -249,6 +259,69 @@ header {
 ul {
     padding-left: 5rem;
 }
+
+/********* TEMA 1 *************/
+
+#tema_2 .col {
+    margin: 5rem 1rem 5rem 1rem;
+    padding: 1rem;
+
+    background-color: #302c4f;
+    border-radius: 22px;
+    box-shadow: 10px 10px rgba(33, 30, 54, 0.76);
+    border: solid 1px #f2a05e;
+}
+
+.top {
+    display: flex;
+    flex-direction: column;
+}
+
+.bottom {
+    display: flex;
+
+}
+
+#tema_2 .img_box {
+    flex-grow: 1;
+    margin: 1vw;
+}
+
+#tema_2 .txt {
+    flex-grow: 1;
+    margin-top: 3vw;
+}
+
+
+.knap {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.knap a {
+    background-color: #4d2d66;
+    border-radius: 8px;
+    border: solid 1.5px #f9db6d;
+    text-decoration: none;
+    color: #f9db6d;
+    text-align: center;
+    padding: 0.8rem;
+    margin: 1rem;
+
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 300;
+    font-size: 0.95rem;
+}
+
+.knap a:hover {
+    transform: scale(1.1);
+    box-shadow: 6px 7px rgba(33, 30, 54, 0.76);
+    transition: 0.4s;
+}
+
+
 
 /********* ANIMATIONS ****************/
 
@@ -323,11 +396,11 @@ ul {
         font-size: 4rem;
     }
 
-    .img_box {
+    #om_mig .col .img_box {
         padding: 1rem;
     }
 
-    .txt {
+    #om_mig .col .txt {
         padding: 0rem 3.5rem 3.5rem 3.5rem;
     }
 }
@@ -356,6 +429,21 @@ ul {
     #title {
         padding: 6rem 0rem 0rem 2rem;
         width: 300px;
+    }
+
+    .knap {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: row;
+    }
+
+    #tema_2 .img_box {
+        padding: 2rem 2rem 0 2rem;
+    }
+
+    #tema_2 .txt {
+        padding: 0 4rem 1rem 4rem;
     }
 
 }
@@ -396,7 +484,7 @@ ul {
         /* display: none;*/
     }
 
-    .col {
+    #om_mig .col {
         display: flex;
         flex-wrap: wrap;
         margin: 7rem 4rem 7rem 4rem;
@@ -405,21 +493,21 @@ ul {
         border-radius: 22px;
     }
 
-    .img_box {
+    #om_mig .col .img_box {
         flex-grow: 1;
         flex-basis: 250px;
         margin: 2rem 2rem 0 2rem;
         padding: 1rem;
     }
 
-    .txt {
+    #om_mig .col .txt {
         flex-grow: 1;
         flex-basis: 250px;
         margin: 1rem;
         padding: 0rem 3.5rem 3.5rem 0;
     }
 
-    h1 {
+    #om_mig .col h1 {
         font-size: 3rem;
     }
 
@@ -431,6 +519,29 @@ ul {
 
     #title {
         padding: 6rem 0rem 0rem 7rem;
+    }
+
+    #tema_2 .col {
+        margin-top: 6rem;
+    }
+
+    .top {
+        flex-direction: row;
+    }
+
+    #tema_2 .img_box {
+        flex-basis: 500px;
+        margin: 1vw;
+    }
+
+    #tema_2 .txt {
+        flex-basis: 500px;
+        margin-top: 3vw;
+        padding: 0 3rem 1rem 1rem;
+    }
+
+    #tema_2 p {
+        font-size: 0.95rem;
     }
 
 }
@@ -461,7 +572,7 @@ ul {
         left: 12vw;
     }
 
-    .col {
+    #om_mig .col {
         display: flex;
         flex-wrap: wrap;
         margin: 10rem 0 0 0;
@@ -470,21 +581,21 @@ ul {
         border-radius: 22px;
     }
 
-    .img_box {
+    #om_mig .col .img_box {
         flex-grow: 1;
         flex-basis: 300px;
         margin: 2rem;
         padding: 1rem;
     }
 
-    .txt {
+    #om_mig .col .txt {
         flex-grow: 1;
         flex-basis: 300px;
         margin: 1rem;
         padding: 1.8rem 3.5rem 3.5rem 1.5rem;
     }
 
-    h1 {
+    #om_mig .col h1 {
         font-size: 4rem;
     }
 
