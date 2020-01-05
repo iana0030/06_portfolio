@@ -19,6 +19,7 @@ video {
 body {
     margin: 0;
     background-color: rgba(63, 40, 71, 1);
+    background-image: url(elements/stars_bg.png);
 }
 
 section {
@@ -209,7 +210,7 @@ header {
 
 #title {
     position: absolute;
-    padding: 2rem 0rem 3rem 3rem;
+    padding: 2rem 0rem 3rem 1rem;
     width: 280px;
 }
 
@@ -461,7 +462,7 @@ ul {
     }
 
     #title {
-        padding: 6rem 0rem 0rem 2rem;
+        padding: 3rem 0rem 0rem 1rem;
         width: 300px;
     }
 
@@ -562,7 +563,7 @@ ul {
     }
 
     #title {
-        padding: 6rem 0rem 0rem 7rem;
+        padding: 3rem 0rem 0rem 1rem;
     }
 
     #tema_2 .col,
@@ -661,7 +662,7 @@ ul {
     }
 
     #title {
-        padding: 6rem 0rem 0rem 5rem;
+        padding: 4rem 0rem 0rem 1rem;
     }
 
 }
@@ -674,8 +675,8 @@ ul {
     }*/
 
     #title {
-        padding: 5rem 0rem 0rem 7rem;
-        width: 367px;
+        padding: 3rem 0rem 0rem 5rem;
+        width: 395px;
     }
 
     #topnav .menu {
@@ -692,7 +693,7 @@ ul {
     }*/
 
     #title {
-        padding: 5rem 0rem 0rem 20rem;
-        width: 627px;
+        padding: 4rem 0rem 0rem 5rem;
+        width: 450px;
     }
 }
