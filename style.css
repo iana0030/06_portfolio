@@ -310,6 +310,7 @@ ul {
 
 .bottom {
     display: flex;
+    flex-direction: column;
     padding: 0 0rem 1rem 0rem;
 }
 
@@ -319,10 +320,6 @@ ul {
 
 .bottom h1 {
     margin-bottom: 0;
-}
-
-.bottom .img_box_2 {
-    padding: 5rem;
 }
 
 #tema_2 .img_box,
@@ -339,6 +336,7 @@ ul {
 #tema_5 .img_box_2 {
     flex-grow: 1;
     margin: 1vw;
+    padding: 1rem 3rem 2rem 3rem;
 }
 
 #tema_2 .txt,
@@ -382,7 +380,6 @@ ul {
 .video_box {
     align-self: center;
 }
-
 
 /********* ANIMATIONS ****************/
 
@@ -454,7 +451,7 @@ ul {
 
 @media only screen and (min-width: 540px) {
     h1 {
-        font-size: 4rem;
+        font-size: 3rem;
     }
 
     #om_mig .col .img_box {
@@ -610,9 +607,12 @@ ul {
     #tema_3 .txt,
     #tema_4 .txt,
     #tema_5 .txt {
-        flex-basis: 500px;
         margin-top: 3vw;
         padding: 0 3rem 1rem 1rem;
+    }
+
+    .top .txt {
+        flex-basis: 500px;
     }
 
     #tema_2 p,
@@ -624,6 +624,13 @@ ul {
 
     .bottom {
         padding: 0 5rem 1rem 5rem;
+    }
+
+    #tema_2 .img_box_2,
+    #tema_3 .img_box_2,
+    #tema_4 .img_box_2,
+    #tema_5 .img_box_2 {
+        padding: 0rem 2rem 2rem 0rem;
     }
 }
 
@@ -651,6 +658,10 @@ ul {
         z-index: 1;
         top: 2vw;
     }*/
+
+    h1 {
+        font-size: 4rem;
+    }
 
     #om_mig .col {
         display: flex;
