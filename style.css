@@ -45,7 +45,7 @@ h1 {
     color: #f2a05e;
     font-family: 'Timmana', sans-serif;
     font-size: 2.5rem;
-    margin: 2rem 0;
+    margin: 1rem 0;
     line-height: 100%;
 }
 
@@ -324,6 +324,7 @@ ul {
 
 .bottom h1 {
     margin-bottom: 0;
+    margin-top: 2rem;
 }
 
 #tema_2 .img_box,
@@ -349,7 +350,7 @@ ul {
 #tema_5 .txt {
     flex-grow: 1;
     margin-top: 3vw;
-    padding: 0 3rem;
+    padding: 0;
 }
 
 
@@ -465,6 +466,13 @@ ul {
     #om_mig .col .txt {
         padding: 0rem 3.5rem 3.5rem 3.5rem;
     }
+
+    #tema_2 .txt,
+    #tema_3 .txt,
+    #tema_4 .txt,
+    #tema_5 .txt {
+        padding: 0 1.5rem;
+    }
 }
 
 @media only screen and (min-width: 800px) {
@@ -563,6 +571,10 @@ ul {
 
     #om_mig .col h1 {
         font-size: 3rem;
+    }
+
+    h1 {
+        margin: 2rem 0;
     }
 
     p,
