@@ -41,6 +41,10 @@ section {
     border-radius: 22px;
 }
 
+.frame_dif {
+    height: 87vh;
+}
+
 h1 {
     color: #f2a05e;
     font-family: 'Timmana', sans-serif;
@@ -475,6 +479,14 @@ ul {
     }
 }
 
+@media only screen and (min-width: 665px) {
+
+    #porfolio .sectionwrapper,
+    #om_mig .sectionwrapper {
+        height: 76vh
+    }
+}
+
 @media only screen and (min-width: 800px) {
 
     #menuknap,
@@ -547,12 +559,7 @@ ul {
     }
 
     #om_mig .col {
-        display: flex;
-        flex-wrap: wrap;
         margin: 7rem 4rem 7rem 4rem;
-
-        background-color: #302c4f;
-        border-radius: 22px;
     }
 
     #om_mig .col .img_box {
@@ -610,6 +617,10 @@ ul {
         padding: 0 3rem 1rem 1rem;
     }
 
+    #tema_5 .top .txt {
+        padding: 0 3rem 5rem 1rem;
+    }
+
     .top .txt {
         flex-basis: 500px;
     }
@@ -657,12 +668,7 @@ ul {
     }
 
     #om_mig .col {
-        display: flex;
-        flex-wrap: wrap;
-        margin: 7rem 0 0 0;
-
-        background-color: #302c4f;
-        border-radius: 22px;
+        margin: 7rem 1rem 0 1rem;
     }
 
     #om_mig .col .img_box {
