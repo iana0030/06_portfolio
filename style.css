@@ -335,7 +335,7 @@ ul {
 #tema_5 .img_box_2 {
     flex-grow: 1;
     margin: 1vw;
-    padding: 1rem 3rem 2rem 3rem;
+    padding-bottom: 1rem;
 }
 
 #tema_2 .txt,
@@ -466,6 +466,13 @@ ul {
     #tema_4 .txt,
     #tema_5 .txt {
         padding: 0 1.5rem;
+    }
+
+    #tema_2 .img_box_2,
+    #tema_3 .img_box_2,
+    #tema_4 .img_box_2,
+    #tema_5 .img_box_2 {
+        padding: 1rem 3rem 2rem 3rem;
     }
 }
 
