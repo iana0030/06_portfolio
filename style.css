@@ -30,8 +30,6 @@ section {
 .sectionwrapper {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
 }
 
 .frame {
@@ -39,10 +37,6 @@ section {
     margin: 3vw;
     padding: 0 1rem 3rem 1rem;
     border-radius: 22px;
-}
-
-.frame_dif {
-    height: 87vh;
 }
 
 h1 {
@@ -63,7 +57,7 @@ li {
     font-size: 0.95rem;
 }
 
-/********** MENU ********/
+/********************************** MENU ********/
 
 header {
     position: fixed;
@@ -75,7 +69,6 @@ header {
 #topnav .menu {
     display: flex;
     flex-wrap: nowrap;
-    justify-content: space-between;
     padding: 0 8rem;
 }
 
@@ -162,7 +155,7 @@ header {
     z-index: 101;
 }
 
-/************** FORSIDE ***************/
+/********************************** FORSIDE ***************/
 
 #forside {
     width: 100vw;
@@ -227,12 +220,11 @@ header {
     position: inherit;
 }
 
-/********* PORTFOLIO *************/
+/******************************** PORTFOLIO *************/
 
 #portfolio {
     max-width: 1300px;
-    padding: 2.5vw 4vw 0 4vw;
-    margin: 0 auto;
+    padding: 4.5vw 4vw 0 4vw;
     background-image: url(elements/stars_bg.png);
 }
 
@@ -251,11 +243,9 @@ header {
     cursor: pointer;
 }
 
-/************ OM MIG *****************/
+/******************************** OM MIG *****************/
 
 #om_mig {
-    max-width: 1300px;
-    margin: 0 auto;
     background-image: url(elements/stars_bg.png);
     background-size: cover;
 }
@@ -289,7 +279,7 @@ ul {
     padding-left: 5rem;
 }
 
-/********* TEMAER *************/
+/******************************* TEMAER *************/
 
 #tema_2,
 #tema_3,
@@ -390,7 +380,7 @@ ul {
     align-self: center;
 }
 
-/********* ANIMATIONS ****************/
+/********************************* ANIMATIONS ****************/
 
 .float {
     animation-name: float_kf;
@@ -456,7 +446,7 @@ ul {
     }
 }
 
-/********** MEDIA QUERIES ************/
+/**************************** MEDIA QUERIES ************/
 
 @media only screen and (min-width: 540px) {
     h1 {
@@ -476,14 +466,6 @@ ul {
     #tema_4 .txt,
     #tema_5 .txt {
         padding: 0 1.5rem;
-    }
-}
-
-@media only screen and (min-width: 665px) {
-
-    #porfolio .sectionwrapper,
-    #om_mig .sectionwrapper {
-        height: 76vh
     }
 }
 
@@ -563,16 +545,12 @@ ul {
     }
 
     #om_mig .col .img_box {
-        flex-grow: 1;
         flex-basis: 250px;
-        margin: 2rem 2rem 0 2rem;
-        padding: 1rem;
+        margin: 4rem 2rem 0 2rem;
     }
 
     #om_mig .col .txt {
-        flex-grow: 1;
         flex-basis: 250px;
-        margin: 1rem;
         padding: 0rem 3.5rem 3.5rem 0;
     }
 
@@ -606,14 +584,12 @@ ul {
     #tema_4 .img_box,
     #tema_5 .img_box {
         flex-basis: 500px;
-        margin: 1vw;
     }
 
     #tema_2 .txt,
     #tema_3 .txt,
     #tema_4 .txt,
     #tema_5 .txt {
-        margin-top: 3vw;
         padding: 0 3rem 1rem 1rem;
     }
 
@@ -641,6 +617,15 @@ ul {
     #tema_4 .img_box_2,
     #tema_5 .img_box_2 {
         padding: 0rem 2rem 2rem 0rem;
+    }
+
+    .frame_dif {
+        top: 39px;
+        bottom: 8px;
+        right: 39px;
+        left: 39px;
+        margin: 1vw;
+        position: absolute;
     }
 }
 
@@ -672,16 +657,13 @@ ul {
     }
 
     #om_mig .col .img_box {
-        flex-grow: 1;
         flex-basis: 300px;
         margin: 2rem;
-        padding: 1rem;
+        padding-top: 2.5rem;
     }
 
     #om_mig .col .txt {
-        flex-grow: 1;
         flex-basis: 300px;
-        margin: 1rem;
         padding: 1.8rem 3.5rem 3.5rem 1.5rem;
     }
 
